@@ -2,17 +2,17 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/crate.glb-f6560f609802bed54a2cb118d72eedaf.scn"
+path="res://.import/block_juego.glb-b9bbbf3d9fc20d56b781ba04afac750c.scn"
 
 [deps]
 
-source_file="res://recursos/modelos/props/crate.glb"
-dest_files=[ "res://.import/crate.glb-f6560f609802bed54a2cb118d72eedaf.scn" ]
+source_file="res://juego/bloques/block_juego.glb"
+dest_files=[ "res://.import/block_juego.glb-b9bbbf3d9fc20d56b781ba04afac750c.scn" ]
 
 [params]
 
 nodes/root_type="RigidBody"
-nodes/root_name="Caja"
+nodes/root_name="Bloque"
 nodes/root_scale=1.0
 nodes/custom_script=""
 nodes/storage=0
