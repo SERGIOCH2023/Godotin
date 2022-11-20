@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://recursos/fuentes/Kenney Blocks.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://recursos/fuentes/Kenney Future Narrow.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://juego/Menu/MenuIntermedio.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 59
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 39
+font_data = ExtResource( 2 )
+
+[node name="MenuIntermedio" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Titulo" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -330.5
+margin_top = 87.0
+margin_right = 330.5
+margin_bottom = 176.0
+custom_fonts/font = SubResource( 1 )
+text = "Nivel x completo"
+align = 1
+
+[node name="Puntos" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -330.5
+margin_top = -136.5
+margin_right = 330.5
+margin_bottom = 136.5
+custom_fonts/font = SubResource( 1 )
+text = "x
+Puntos totales
+"
+align = 1
+
+[node name="BotonNivel" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -182.0
+margin_top = 85.0
+margin_right = 182.0
+margin_bottom = 181.0
+custom_fonts/font = SubResource( 2 )
+text = "Siguiente Nivel"
+
+[connection signal="pressed" from="BotonNivel" to="." method="_on_BotonNivel_pressed"]

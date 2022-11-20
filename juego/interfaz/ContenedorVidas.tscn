@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://juego/interfaz/ContenedorInfo.tscn" type="PackedScene" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Animacion_Vidas"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 88.0267, -18.9278 ), Vector2( 88.0267, -15.4813 ), Vector2( 88.0267, -20.0766 ), Vector2( 87.4523, -17.7789 ), Vector2( 89.1755, -17.7789 ), Vector2( 88.0267, -18.9278 ) ]
+}
+
+[node name="ContenedorVidas" instance=ExtResource( 1 )]
+
+[node name="TextureRect" parent="." index="0"]
+margin_left = -55.5023
+margin_top = -41.2789
+margin_right = -3.50209
+margin_bottom = 29.7211
+
+[node name="AnimationPlayer" parent="." index="2"]
+autoplay = "Animacion_Vidas"
+anims/Animacion_Vidas = SubResource( 1 )

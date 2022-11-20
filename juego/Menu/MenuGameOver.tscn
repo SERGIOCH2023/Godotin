@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://recursos/fuentes/Kenney Mini Square Mono.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://recursos/fuentes/Kenney Future.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://juego/Menu/MenuGameOver.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 36
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = ExtResource( 2 )
+
+[node name="MenuGameOver" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -121.5
+margin_top = -76.5
+margin_right = 121.5
+margin_bottom = -31.5
+custom_fonts/font = SubResource( 1 )
+text = "GAME OVER"
+
+[node name="BotonReintentar" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -86.0
+margin_top = -14.5
+margin_right = 86.0
+margin_bottom = 14.5
+custom_fonts/font = SubResource( 2 )
+text = "REINTENTAR"
+
+[node name="BotonMenuPrincipal" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -111.5
+margin_top = 33.5
+margin_right = 111.5
+margin_bottom = 62.5
+custom_fonts/font = SubResource( 2 )
+text = "Menu Principal"
+
+[connection signal="pressed" from="BotonReintentar" to="." method="_on_BotonReintentar_pressed"]
+[connection signal="pressed" from="BotonMenuPrincipal" to="." method="_on_BotonMenuPrincipal_pressed"]

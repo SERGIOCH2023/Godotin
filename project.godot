@@ -23,18 +23,29 @@ _global_script_classes=[ {
 "class": "Moneda",
 "language": "GDScript",
 "path": "res://juego/items/MonedaDorada.gd"
+}, {
+"base": "Area",
+"class": "PortalNivel",
+"language": "GDScript",
+"path": "res://juego/objetos/Portal/Portal.gd"
 } ]
 _global_script_class_icons={
 "ArbolAnimacionPlayer": "",
 "Godotin": "",
-"Moneda": ""
+"Moneda": "",
+"PortalNivel": ""
 }
 
 [application]
 
 config/name="Godotin"
-run/main_scene="res://juego/Niveles/NivelTest.tscn"
+run/main_scene="res://juego/niveles/NivelTest.tscn"
 config/icon="res://iconGodotin.png"
+
+[autoload]
+
+Eventos="*res://juego/autoloads/Eventos.gd"
+DatosJuego="*res://juego/autoloads/DatosJuego.gd"
 
 [display]
 

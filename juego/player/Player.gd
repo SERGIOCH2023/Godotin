@@ -38,10 +38,10 @@ func _unhandled_input(event: InputEvent) -> void:
 		disparando = false
 		linterna.light_energy = 0
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	brazo_camara.translation = translation
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	movimiento_horizontal()
 	movimiento_vertical()
 	movimiento = move_and_slide_with_snap(movimiento, vector_snap ,direccion_arriba, true)
@@ -56,6 +56,12 @@ func _physics_process(delta: float) -> void:
 func movimiento_horizontal()-> void:
 	movimiento.x = tomar_direccion().x * velocidad_max.x
 	movimiento.z = tomar_direccion().z * velocidad_max.x
+
+func respawn()-> void:
+	DatosJuego.restar_vidas()
+	if DatosJuego.vidas != 0:
+		get_tree().reload_current_scene()
+	
 
 func tomar_direccion()-> Vector3:
 	var direccion: Vector3 = Vector3.ZERO
