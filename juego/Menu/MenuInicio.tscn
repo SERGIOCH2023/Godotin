@@ -1,0 +1,101 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://recursos/fuentes/Kenney Future.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://recursos/fuentes/Kenney Future Narrow.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://juego/Menu/MenuInicio.gd" type="Script" id=3]
+[ext_resource path="res://recursos/audio/sfx/select_2.wav" type="AudioStream" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 61
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 34
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 34
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 34
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 34
+font_data = ExtResource( 2 )
+
+[node name="MenuInicio" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+menu_ajustes = "res://juego/Menu/MenuAjustes.tscn"
+nivel_inicial = "res://juego/niveles/NivelTest.tscn"
+pantalla_carga = "res://juego/interfaz/PantallaCarga.tscn"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -163.0
+margin_top = -217.0
+margin_right = 163.0
+margin_bottom = -147.0
+custom_fonts/font = SubResource( 1 )
+text = "GODOTIN"
+
+[node name="ContenedorPrincipal" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -95.5
+margin_top = -100.0
+margin_right = 95.5
+margin_bottom = 100.0
+
+[node name="BotonCargar" type="Button" parent="ContenedorPrincipal"]
+margin_right = 191.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 2 )
+disabled = true
+text = "CARGAR"
+
+[node name="BotonNuevo" type="Button" parent="ContenedorPrincipal"]
+margin_top = 49.0
+margin_right = 191.0
+margin_bottom = 94.0
+custom_fonts/font = SubResource( 3 )
+text = "NUEVO"
+
+[node name="BotonOpciones" type="Button" parent="ContenedorPrincipal"]
+margin_top = 98.0
+margin_right = 191.0
+margin_bottom = 143.0
+custom_fonts/font = SubResource( 4 )
+text = "OPCIONES"
+
+[node name="HSeparator" type="HSeparator" parent="ContenedorPrincipal"]
+margin_top = 147.0
+margin_right = 191.0
+margin_bottom = 151.0
+
+[node name="BotonSalir" type="Button" parent="ContenedorPrincipal"]
+margin_top = 155.0
+margin_right = 191.0
+margin_bottom = 200.0
+custom_fonts/font = SubResource( 5 )
+text = "SALIR"
+
+[node name="BotonSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[connection signal="pressed" from="ContenedorPrincipal/BotonNuevo" to="." method="_on_BotonNuevo_pressed"]
+[connection signal="pressed" from="ContenedorPrincipal/BotonOpciones" to="." method="_on_BotonOpciones_pressed"]
+[connection signal="pressed" from="ContenedorPrincipal/BotonSalir" to="." method="_on_BotonSalir_pressed"]

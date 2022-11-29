@@ -802,10 +802,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 2 )
 [node name="ContenedorSierras" type="Node" parent="."]
 
 [node name="sierra" parent="ContenedorSierras" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 17.5 )
 
 [node name="sierra2" parent="ContenedorSierras" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, 6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, 17.5 )
 
 [node name="sierra3" parent="ContenedorSierras" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 17.5 )

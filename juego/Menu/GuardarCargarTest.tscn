@@ -1,0 +1,130 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://recursos/fuentes/Kenney Pixel Square.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://juego/Menu/GuardarCargarTest.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[node name="GuardarCargarTest" type="Node"]
+script = ExtResource( 2 )
+
+[node name="BotonGuardar" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -107.0
+margin_top = 21.0
+margin_right = -31.0
+margin_bottom = 41.0
+text = "GUARDAR"
+
+[node name="BotonGuardarGodot" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -139.0
+margin_top = 60.0
+margin_right = -10.0
+margin_bottom = 80.0
+text = "GUARDAR GODOT"
+
+[node name="BotonCargar" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 24.0
+margin_top = 21.0
+margin_right = 100.0
+margin_bottom = 41.0
+text = "CARGAR"
+
+[node name="BotonCargarGodot" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 4.0
+margin_top = 60.0
+margin_right = 121.0
+margin_bottom = 80.0
+text = "CARGAR GODOT"
+
+[node name="BotonBorrar" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -32.5
+margin_top = -10.0
+margin_right = 32.5
+margin_bottom = 10.0
+text = "BORRAR"
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -127.0
+margin_top = -180.0
+margin_right = 127.0
+margin_bottom = -156.0
+custom_fonts/font = SubResource( 1 )
+text = "Hola mundo, mi nombre es"
+
+[node name="TextoResultadojSON" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 122.0
+margin_top = -115.0
+margin_right = 228.0
+margin_bottom = -91.0
+custom_fonts/font = SubResource( 2 )
+text = "Resultado"
+
+[node name="TextoResultadoTRES" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 122.0
+margin_top = -47.0
+margin_right = 228.0
+margin_bottom = -23.0
+custom_fonts/font = SubResource( 2 )
+text = "Resultado"
+
+[node name="NombrejSON" type="LineEdit" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -109.0
+margin_top = -133.0
+margin_right = 109.0
+margin_bottom = -93.0
+
+[node name="NombreTRES" type="LineEdit" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -109.0
+margin_top = -64.0
+margin_right = 109.0
+margin_bottom = -24.0
+
+[connection signal="pressed" from="BotonGuardar" to="." method="_on_BotonGuardar_pressed"]
+[connection signal="pressed" from="BotonGuardarGodot" to="." method="_on_BotonGuardarGodot_pressed"]
+[connection signal="pressed" from="BotonCargar" to="." method="_on_BotonCargar_pressed"]
+[connection signal="pressed" from="BotonCargarGodot" to="." method="_on_BotonCargarGodot_pressed"]
+[connection signal="pressed" from="BotonBorrar" to="." method="_on_BotonBorrar_pressed"]

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://juego/almacenamiento/DatosAjustesGuardado.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+pantalla_completa = false
+pantalla_resolucion = Vector2( 640, 480 )
+volumen_buses = {
+"master": -45.0,
+"musica": 6.02,
+"sfx": 0.0
+}
