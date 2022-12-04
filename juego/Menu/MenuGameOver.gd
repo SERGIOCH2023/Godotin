@@ -12,6 +12,6 @@ func _ready() -> void:
 
 func _on_BotonMenuPrincipal_pressed() -> void:
 	get_tree().change_scene(menu_inicial)
-
+	
 func _on_BotonReintentar_pressed() -> void:
 	get_tree().change_scene(nivel_actual)

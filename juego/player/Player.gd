@@ -40,6 +40,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _process(_delta: float) -> void:
 	brazo_camara.translation = translation
+	
 
 func _physics_process(_delta: float) -> void:
 	movimiento_horizontal()

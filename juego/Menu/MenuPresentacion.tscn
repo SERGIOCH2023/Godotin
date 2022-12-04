@@ -129,6 +129,7 @@ tracks/4/keys = {
 [node name="MenuPresentacion" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+mouse_filter = 2
 script = ExtResource( 4 )
 menu_inicial = "res://juego/Menu/MenuInicio.tscn"
 
@@ -147,10 +148,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 490.0
-margin_top = -181.5
-margin_right = 1085.0
-margin_bottom = -130.5
+margin_left = 970.0
+margin_top = 138.5
+margin_right = 1565.0
+margin_bottom = 189.5
 custom_fonts/font = SubResource( 1 )
 text = "GODOT GAME ENGINE"
 

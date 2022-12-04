@@ -14,6 +14,7 @@ viewport_path = NodePath("Viewport")
 [node name="PantallaCarga" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+mouse_filter = 2
 script = ExtResource( 3 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -33,7 +34,6 @@ text = "PRO TIP: PARA GANAR EL JUEGO HAY QUE TRATAR DE NO MORIR"
 size = Vector2( 1500, 1500 )
 own_world = true
 transparent_bg = true
-msaa = 1
 usage = 3
 render_target_v_flip = true
 
@@ -51,7 +51,6 @@ position = Vector2( 460, 309 )
 texture = SubResource( 2 )
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 2.0
 one_shot = true
 autostart = true
 
