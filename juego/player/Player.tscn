@@ -1662,6 +1662,10 @@ script = ExtResource( 2 )
 __meta__ = {
 "__editor_plugin_screen__": "3D"
 }
+velocidad_max = Vector2( 10, 14 )
+gravedad = 1.2
+impulso = 20.0
+fuerza_salto = 5.0
 
 [node name="Colisionador" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05457, 0.0565164 )
@@ -1843,7 +1847,7 @@ transform = Transform( 1, 0, 0, 0, 0.891007, 0.453991, 0, -0.453991, 0.891007, 0
 collision_mask = 6
 spring_length = 12.0
 script = ExtResource( 1 )
-rango_rotacion_camara_x = Vector2( -45, -15 )
+rango_rotacion_camara_x = Vector2( -90, -10 )
 camara_x_invertida = true
 camara_y_invertida = true
 

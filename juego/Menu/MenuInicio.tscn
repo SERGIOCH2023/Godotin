@@ -31,7 +31,7 @@ anchor_bottom = 1.0
 mouse_filter = 2
 script = ExtResource( 3 )
 menu_ajustes = "res://juego/Menu/MenuAjustes.tscn"
-nivel_inicial = "res://juego/niveles/Nivelprueva.tscn"
+nivel_inicial = "res://juego/niveles/Nivel.tscn"
 pantalla_carga = "res://juego/interfaz/PantallaCarga.tscn"
 
 [node name="ColorRect" type="ColorRect" parent="."]
